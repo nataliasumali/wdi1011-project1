@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Slackey);
+
+html, body {
+	height: 700px;
+	width: 1000px;
+	font-family: 'Slackey';
+	text-align: center;
+	background-image: url(images/200.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: red;
+	width: 1000px;
+	margin-left: 32px;
+}
+
+span {
+	color: black;
+}
+
+p {
+	position: absolute;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 0;
+	margin-left: 75px;
+}
+
+.megaWrapper {
+	height: 700px;
+	width: 1000px;
+}
+
+.title {
+	height: 100px;
+	font-size: 60px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	height: 500px;
+	width: 500px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.box {
+	height: 160px;
+	width: 160px;
+	border: 1px dashed black;
+	float: left;
+	margin: 2px;
+	/*background-image: url(images/images-14.jpg);
+	background-position: center;*/
+	opacity: 0.7;
+	}
+
+.xclass {
+	background-image: url(images/imgres-3.jpg);
+	background-size: cover;
+}
+
+.oclass {
+	background-image: url(images/images-13.jpg);
+	background-size: cover;
+}
+
+.win {
+	height: 500px;
+	width: 500px;
+	background-image: url(images/200-2.gif);
+	background-size: cover;
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	
+}
+
+.tie {
+	height: 500px;
+	width: 500px;
+	background-image: url(images/200-1.gif);
+	background-size: cover;
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	color: blue;
+}
+
+.reset {
+	height: 75px;
+	width: 500px;
+	margin: 0 auto;
+	border: 2px solid black;
+	font-size: 60px;
+}
+
+/*.board1 {
+	height: 500px;
+	width: 230px;
+	border: 1px solid black;
+	float: left;
+}*/
+
+/*.board2 {
+	height: 500px;
+	width: 230px;
+	border: 1px solid black;
+	margin-left: 765px;
+	margin-top: -500px;
+}*/

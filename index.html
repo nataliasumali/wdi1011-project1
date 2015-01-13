@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>tic tac toe 2</title>
+
+<!-- css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- angular js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.js"></script>
+
+	<!-- firebase -->
+	<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+
+	<!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+
+<!-- js -->
+	<script type="text/javascript" src="main.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+
+	<div class="megaWrapper" ng-controller="appController">
+
+		<div class="title">Tic <span>Tac</span> Toe</div>
+
+		<div class="wrapper">
+			<div class="box" ng-click="clicked(s)" ng-class="{xclass: s.xoStatus == 'X', oclass: s.xoStatus == 'O'}"  ng-repeat="s in gameContainer.FBsquares"></div>		
+			<div class="win" ng-show="gameContainer.FBwin==true" ng-hide="gameContainer.FBwin==false">
+				<p>Hooray!!!</p>
+			</div>
+			<div class="tie" ng-show="gameContainer.FBtie==true" ng-hide="gameContainer.FBtie==false">
+				<p>It's a Tie...</p>
+			</div>
+		</div>
+
+		<!-- <div class="reset" ng-click="reset()">R<span>e</span>s<span>e</span>t <span>G</span>a<span>m</span>e</div> -->
+
+	</div>
+	
+</body>
+
+</html>
